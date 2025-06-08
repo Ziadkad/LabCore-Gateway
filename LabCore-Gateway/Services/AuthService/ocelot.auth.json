@@ -1,0 +1,94 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/User/get",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreauthservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/auth/User/get",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/getAuth",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreauthservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/auth/User/getAuth",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/me",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreauthservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/auth/User/me",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreauthservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/auth/User/login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreauthservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/auth/User/register",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/requestVerification",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreauthservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/auth/User/requestVerification",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/verifyEmail",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreauthservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/auth/User/verifyEmail",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/GiveRole",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreauthservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/auth/User/GiveRole",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreauthservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/auth/User",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Image/{filename}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreauthservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/auth/Image/{filename}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}
