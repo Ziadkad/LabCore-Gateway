@@ -1,0 +1,68 @@
+{
+  "Routes":
+    [
+      {
+        "DownstreamPathTemplate": "/api/File/app/Files/Projects/{projectId}/{filename}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcorefileservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/files/file/app/Files/Projects/{projectId}/{filename}",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/File/app/Files/Projects/{projectId}/{studyId}/{filename}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcorefileservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/files/file/app/Files/Projects/{projectId}/{studyId}/{filename}",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/File/app/Files/Projects/{projectId}/{studyId}/{taskId}/{filename}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcorefileservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/files/file/app/Files/Projects/{projectId}/{studyId}/{taskId}/{filename}",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/File/Upload",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcorefileservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/files/file/Upload",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/File/app/Files/Projects/{projectId}/{filename}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcorefileservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/files/file/app/Files/Projects/{projectId}/{filename}",
+        "UpstreamHttpMethod": [ "DELETE" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/File/app/Files/Projects/{projectId}/{studyId}/{filename}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcorefileservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/File/app/Files/Projects/{projectId}/{studyId}/{filename}",
+        "UpstreamHttpMethod": [ "DELETE" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/File/app/Files/Projects/{projectId}/{studyId}/{taskId}/{filename}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcorefileservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/files/file/app/Files/Projects/{projectId}/{studyId}/{taskId}/{filename}",
+        "UpstreamHttpMethod": [ "DELETE" ]
+      }
+    ]
+}

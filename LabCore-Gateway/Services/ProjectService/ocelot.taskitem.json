@@ -1,0 +1,59 @@
+  {
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/api/TaskItem",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcoreprojectservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/projects/taskitem",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/TaskItem/{id}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcoreprojectservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/projects/taskitem/{id}",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/TaskItem",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcoreprojectservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/projects/taskitem",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/TaskItem/{id}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcoreprojectservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/projects/taskitem/{id}",
+        "UpstreamHttpMethod": [ "DELETE" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/TaskItem/{id}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcoreprojectservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/projects/taskitem/{id}",
+        "UpstreamHttpMethod": [ "PUT" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/TaskItem/status/{id}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          { "Host": "labcoreprojectservice", "Port": 8080 }
+        ],
+        "UpstreamPathTemplate": "/api/projects/taskitem/status/{id}",
+        "UpstreamHttpMethod": [ "PUT" ]
+      }
+    ]
+  
+  }

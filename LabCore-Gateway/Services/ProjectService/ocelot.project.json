@@ -1,0 +1,67 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Project/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreprojectservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/api/projects/project/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/Studies/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreprojectservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/api/projects/project/Studies/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreprojectservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/api/projects/project",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreprojectservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/api/projects/project",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/AddResearchers/{projectId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreprojectservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/api/projects/project/AddResearchers/{projectId}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreprojectservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/api/projects/project/{id}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "labcoreprojectservice", "Port": 8080 }
+      ],
+      "UpstreamPathTemplate": "/api/projects/project/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    }
+  ]
+}
