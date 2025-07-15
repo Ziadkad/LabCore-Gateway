@@ -1,0 +1,28 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/Resource",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "labcoreresourceservice",
+                    "Port": 8080
+                }
+            ],
+            "UpstreamPathTemplate": "/api/resources/resource",
+            "UpstreamHttpMethod": [ "POST", "GET" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Resource/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "labcoreresourceservice",
+                    "Port": 8080
+                }
+            ],
+            "UpstreamPathTemplate": "/api/resources/resource/{id}",
+            "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+        }
+    ]
+}
